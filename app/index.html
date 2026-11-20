@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#08161d">
+<title>Vice After Dark — GTA VI Trophy Guide &amp; Platinum Planner</title>
+<meta name="description" content="Offline GTA VI trophy guide and tracker: all 55 official PlayStation 5 trophies with cited guides, difficulty and time estimates, a roadmap, missables, a hardest-trophies ranking and a platinum ETA planner.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to guide</a>
+<header class="mast">
+  <div>
+    <h1>Vice <span class="neon">After Dark</span></h1>
+    <p class="sub">GTA VI trophy guide &amp; platinum planner — <b>55 official trophies</b>, every guide cited, works fully offline.</p>
+  </div>
+  <div class="ring-wrap">
+    <div class="ring-label"><b id="ring-count">0 / 55 earned</b><span id="ring-hours">~210 hours to platinum</span></div>
+    <svg class="ring" viewBox="0 0 100 100" role="img" aria-label="Platinum progress ring">
+      <circle class="track" cx="50" cy="50" r="42" fill="none" stroke-width="9"></circle>
+      <circle class="fill" id="ring-fill" cx="50" cy="50" r="42" fill="none" stroke-width="9"
+        stroke-dasharray="263.9" stroke-dashoffset="263.9" transform="rotate(-90 50 50)"></circle>
+      <text id="ring-pct" x="50" y="57" text-anchor="middle">0%</text>
+    </svg>
+  </div>
+</header>
+
+<div class="shell">
+  <nav class="rail" aria-label="Guide sections">
+    <h2>Guide</h2>
+    <button class="navbtn active" data-view="checklist">Checklist <span class="count" id="nav-checklist-count"></span></button>
+    <button class="navbtn" data-view="roadmap">Roadmap to platinum</button>
+    <button class="navbtn" data-view="missables">Missables <span class="count">7</span></button>
+    <button class="navbtn" data-view="hardest">Hardest trophies</button>
+    <button class="navbtn" data-view="planner">Platinum planner</button>
+    <button class="navbtn" data-view="print">Printable checklist</button>
+
+    <h2>Find a trophy</h2>
+    <label for="q">Search name or description</label>
+    <input type="search" id="q" placeholder="e.g. Shootist, vault, drone…" autocomplete="off">
+    <label for="kind">Kind</label>
+    <select id="kind">
+      <option value="">All kinds</option>
+      <option value="story">Story</option>
+      <option value="missable">Missable only</option>
+      <option value="stranger">Stranger strands</option>
+      <option value="collectible">Collectibles</option>
+      <option value="activity">Activities</option>
+      <option value="exploration">Exploration</option>
+      <option value="combat">Combat</option>
+      <option value="economy">Money &amp; economy</option>
+    </select>
+    <label for="grade">Grade</label>
+    <select id="grade">
+      <option value="">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select>
+    <label for="diff">Max difficulty (1–10)</label>
+    <select id="diff">
+      <option value="">Any difficulty</option>
+      <option value="3">3 or easier</option>
+      <option value="5">5 or easier</option>
+      <option value="7">7 or easier</option>
+      <option value="8">8 or easier</option>
+    </select>
+    <label class="toggle-row"><input type="checkbox" id="hide-earned"> Hide earned</label>
+    <label class="toggle-row"><input type="checkbox" id="spoiler" checked> Spoiler guard on</label>
+    <p class="hint">Spoiler guard hides the names and descriptions of story trophies until you earn them. Your progress saves in this browser only — nothing leaves your machine.</p>
+    <div class="actions">
+      <button class="mini" id="export-btn">Export progress (JSON)</button>
+      <button class="mini" id="import-btn">Import progress (JSON)</button>
+      <input type="file" id="import-file" accept="application/json" hidden>
+      <button class="mini" id="reset-btn">Reset progress</button>
+    </div>
+  </nav>
+
+  <main id="main" aria-live="polite"></main>
+</div>
+
+<footer>
+  <p>Names, descriptions and grades are exactly as PlayStation publishes them (official list, 2026-11-18, via Exophase and PSNProfiles). Guides, difficulty ratings, time estimates and roadmap stages are this guide's own words, written from the official descriptions — where the list does not pin a place down, the guide says so instead of inventing one.</p>
+  <p>Sources are cited beside every guide. Links open only if you follow them; the app itself fetches nothing. No Rockstar Games logo, artwork or game screenshots are used. Unofficial fan guide, not affiliated with Rockstar Games or PlayStation.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
